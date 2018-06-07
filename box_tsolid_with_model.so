@@ -1,0 +1,89 @@
+GOCAD LightTSolid 1 
+HEADER {
+name: box_tsolid
+last_selected_folder: Info
+}
+GOCAD_ORIGINAL_COORDINATE_SYSTEM
+NAME " gocad Local" 
+PROJECTION Unknown
+DATUM Unknown
+AXIS_NAME X Y Z
+AXIS_UNIT m m m
+ZPOSITIVE Depth
+END_ORIGINAL_COORDINATE_SYSTEM
+PROPERTIES resolution_map_error
+PROP_LEGAL_RANGES **none**  **none** 
+NO_DATA_VALUES -99999 
+PROPERTY_CLASSES resolution_map_error
+PROPERTY_KINDS Length
+PROPERTY_SUBCLASSES LINEARFUNCTION Float 1  0 
+ESIZES 1 
+UNITS m
+PROPERTY_CLASS_HEADER _X_LightTSolid_a6d607da-d68043ff-b1af-65a67f66b8ed {
+kind: X
+unit: m
+}
+PROPERTY_CLASS_HEADER _Y_LightTSolid_4f4c65ae-5fde4f84-8038-f0bb355cc50a {
+kind: Y
+unit: m
+}
+PROPERTY_CLASS_HEADER _Z_LightTSolid_e7ad04d9-fc744e82-8426-6accc66365d5 {
+is_z: on
+}
+PROPERTY_CLASS_HEADER resolution_map_error {
+kind: Length
+unit: m
+}
+PVRTX 1 0 0 1 0 
+PVRTX 2 0 0 2.3551745804449901e-016 0 
+PVRTX 3 0 1 1 0 
+PVRTX 4 0 1 2.3551745804449901e-016 0 
+PVRTX 5 1 0 1 0 
+PVRTX 6 1 0 2.3551745804449901e-016 0 
+PVRTX 7 1 1 1 0 
+PVRTX 8 1 1 2.3551745804449901e-016 0 
+TETRA 7 3 5 8 
+# CTETRA Region_1 none +"u1 1" -"v1 1" +"w1 1"
+TETRA 3 8 6 5 
+# CTETRA Region_1 +"u1 1" none none none
+TETRA 3 8 4 6 
+# CTETRA Region_1 -"w0 1" none none -"v1 1"
+TETRA 6 1 2 4 
+# CTETRA Region_1 -"u0 1" -"w0 1" none +"v0 1"
+TETRA 3 1 5 6 
+# CTETRA Region_1 +"v0 1" none none +"w1 1"
+TETRA 3 6 4 1 
+# CTETRA Region_1 none -"u0 1" none none
+MODEL
+SURFACE "u1 1"
+TFACE 1 
+KEYVERTICES 6 5 8 
+TRGL 6 5 8 
+TRGL 7 8 5 
+SURFACE "u0 1"
+TFACE 2 
+KEYVERTICES 3 4 1 
+TRGL 3 4 1 
+TRGL 2 1 4 
+SURFACE "v0 1"
+TFACE 3 
+KEYVERTICES 2 1 6 
+TRGL 2 1 6 
+TRGL 5 6 1 
+SURFACE "v1 1"
+TFACE 4 
+KEYVERTICES 4 3 8 
+TRGL 4 3 8 
+TRGL 7 8 3 
+SURFACE "w0 1"
+TFACE 5 
+KEYVERTICES 2 4 6 
+TRGL 2 4 6 
+TRGL 8 6 4 
+SURFACE "w1 1"
+TFACE 6 
+KEYVERTICES 1 3 5 
+TRGL 1 3 5 
+TRGL 7 5 3 
+MODEL_REGION Region_1 -1 
+END
